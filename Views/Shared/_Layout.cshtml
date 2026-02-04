@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - SoltanShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg">
+
+                <!-- logo -->
+                <a class="navbar-brand fw-bold" asp-action="Index">
+                    <img class="navbar-logo" src="/img/logo.jpg" />
+                </a>
+
+                <div class="collapse navbar-collapse show">
+
+                    <ul class="navbar-nav align-items-center">
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            دسته‌بندی
+                        </a>
+
+                        <div class="dropdown-menu mega-menu shadow">
+                            <div class="row h-50">
+                                <div class="col-3 main-categories">
+                                    <div class="cat-item active" data-target="cat1">آشپزخانه</div>
+                                    <div class="cat-item" data-target="cat2">دکوری</div>
+                                    <div class="cat-item" data-target="cat4">بامبو</div>
+                                </div>
+
+                                <div class="col-9 sub-categories">
+                                    <div class="sub-box active" id="cat1">
+                                        <h5 >آشپزخانه</h5>
+                                        <div class="sub-grid">
+                                            <ul>
+                                                <li>ظروف غذاخوری</li>
+                                                <li>تخته سرو</li>
+                                                <li>لیوان و ماگ</li>
+                                                <li>جا ادویه</li>
+                                            </ul>
+                                            <ul>
+                                                <li>سرویس پذیرایی</li>
+                                                <li>بانکه</li>
+                                                <li>سینی</li>
+                                                <li>کاسه</li>
+                                            </ul>
+                                            <ul>
+                                                <li>قوری</li>
+                                                <li>پارچ</li>
+                                                <li>قندان</li>
+                                                <li>نمکدان</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="sub-box" id="cat2">
+                                        <h5 >دکوری</h5>
+                                        <div class="sub-grid">
+                                            <ul>
+                                                <li>گلدان</li>
+                                                <li>شمع</li>
+                                                <li>قاب عکس</li>
+                                                <li>مجسمه</li>
+                                            </ul>
+                                            <ul>
+                                                <li>چا عودی</li>
+                                                <li>عود</li>
+                                                
+                                            </ul>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="sub-box" id="cat4">
+                                        <h5>بامبو</h5>
+                                        <div class="sub-grid">
+                                            <ul>
+                                                <li>سینی بامبو</li>
+                                                <li>کاسه بامبو</li>
+                                                <li>استند بامبو</li>
+                                                <li>قاشق بامبو</li>
+                                            </ul>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">پیگیری سفارش</a></li>
+
+                     
+                        <li class="nav-item"><a class="nav-link" href="#">درباره ما</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">تماس با ما</a></li>
+
+                        <li class="nav-item">
+                            <form class="search-box d-flex">
+                                <input type="text" placeholder="جستجو...">
+                            </form>
+                        </li>
+                    </ul>
+
+                    <!-- منوی سمت راست -->
+                    <ul class="navbar-nav me-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ورود / ثبت نام</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">🛒</a>
+                        </li>
+                    </ul>
+
+                </div>
+        </nav>
+
+    </header>
+    <div class="container">
+        <main role="main" class="">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+       
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/navbar.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
