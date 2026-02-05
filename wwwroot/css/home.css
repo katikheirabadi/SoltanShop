@@ -1,0 +1,22 @@
+﻿.slider-img {
+    height: 70vh !important;
+    object-fit: cover;
+    overflow: hidden;
+    filter: brightness(50%);
+}
+
+.custom-caption {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.custom-caption h4 {
+    font-weight: bold;
+    margin-bottom:3% !important
+}
+
+    .custom-caption p {
+        color: #efe6c6 !important;
+        margin-bottom: 3% !important
+    }

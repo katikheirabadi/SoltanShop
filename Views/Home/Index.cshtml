@@ -1,6 +1,47 @@
 ﻿@{
     ViewData["Title"] = "خانه";
 }
+<link href="~/css/home.css" rel="stylesheet" />
+<main>
+    <div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
 
+        <div class="carousel-inner">
 
+            <div class="carousel-item active">
+                <img src="/img/banner.jpg" class="d-block w-100 slider-img">
+                <div class="carousel-caption custom-caption">
+                    <h4>به فروشگاه سلطان پور خوش آمدید</h4>
+                    <p>خونه همه ما نیاز به زیبایی و آرامش داره</p>
+                    <a class="btn btn-shop">بزن بریم خرید</a>
+                </div> 
+            </div>
 
+            <div class="carousel-item">
+                <img src="/img/banner2.jpg" class="d-block w-100 slider-img">
+                <div class="carousel-caption custom-caption">
+                    <h4>زیبایی خانه از جزئیات کوچک شروع می‌شود</h4>
+                    <p>الهام گرفته از طبیعت</p>
+                    <a class="btn btn-shop">دسته بندی ها</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/img/banner3.jpg" class="d-block w-100 slider-img">
+                <div class="carousel-caption custom-caption">
+                    <h4>سادگی، لوکس‌ترین انتخاب ماست</h4>
+                    <p>انتخاب خاص‌پسندها</p>
+                    <a class="btn btn-shop">همه تخفیف‌ها</a>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</main>       
+   

@@ -1,0 +1,10 @@
+﻿.btn-shop {
+    background-color: #c5ad41 !important;
+    color: black;
+    border-radius: 10px !important;
+    padding:0.8% !important
+}
+    .btn-shop:hover {
+        background-color: #b49734 !important;
+        transition: 0.2s;
+    }
